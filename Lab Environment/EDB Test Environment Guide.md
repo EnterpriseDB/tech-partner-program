@@ -22,25 +22,25 @@ Virtual machines (and associated resources) are provisioned using the OpenStack 
 
 2. On the dashboard click on Launch Instance button
 
-![](../images/OpenStack 2.png)
+![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/Openstack%202.png)
 
 3. Fill in the details for:
 Flavor (hardware configuration)
 Instance Boot Source: where to create the instance from
 
-![](../images/OpenStack 3.png)
+![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/Openstack%203.png)
 
 4. Create Keys (public and private) to login to the OpenStack instance. Copy and paste the contents of the public key and press import key pair button.
 
-![](../images/OpenStack 4.png)
+![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/Openstack%204.png)
 
 5. Click on Launch button. Now the instance is displayed in the instances list.
 
-![](../images/OpenStack 5.png)
+![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/Openstack%205.png)
 
 6. Assign a floating IP address which will be used to access this instance.
 
-![](../images/OpenStack 6.png)
+![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/Openstack%206.png)
 
 ### On AWS
 
