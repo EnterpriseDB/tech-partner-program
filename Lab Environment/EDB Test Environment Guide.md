@@ -18,29 +18,29 @@ Virtual machines (and associated resources) are provisioned using the OpenStack 
 
 1. Login to the OpenStack console (Rocky)
 
-![OpenStack 1](/images/OpenStack 1.png)
+![](images/OpenStack 1.png)
 
 2. On the dashboard click on Launch Instance button
 
-![OpenStack 2](/images/OpenStack 2.png)
+![](images/OpenStack 2.png)
 
 3. Fill in the details for:
 Flavor (hardware configuration)
 Instance Boot Source: where to create the instance from
 
-![OpenStack 3](/images/OpenStack 3.png)
+![](images/OpenStack 3.png)
 
 4. Create Keys (public and private) to login to the OpenStack instance. Copy and paste the contents of the public key and press import key pair button.
 
-![OpenStack 4](/images/OpenStack 4.png)
+![](images/OpenStack 4.png)
 
 5. Click on Launch button. Now the instance is displayed in the instances list.
 
-![OpenStack 5](/images/OpenStack 5.png)
+![](images/OpenStack 5.png)
 
 6. Assign a floating IP address which will be used to access this instance.
 
-![OpenStack 6](/images/OpenStack 6.png)
+![](images/OpenStack 6.png)
 
 ### On AWS
 
@@ -66,8 +66,9 @@ EC2 instances can be provisioned in order to deploy certain EDB products, such a
 2. Install the `tpaexec` utility on the client machine using the TPAexec Installation Guide.
 
 3. Provision the test resources:
-
-    `tpaexec provision <config-file>`
+    ```
+    tpaexec provision <config-file>
+    ```
 	
 See sample config-file for provisioning resources for BDR-Always-ON architecture using tpaexec.
 
@@ -107,11 +108,13 @@ Follow these installation steps:
 1. Copy ssh key (tpp-test.pem)to the client machine
 
 2. Set appropriate permissions on the key file
-
-    `chmod 600 ./tpp-test.pem`
+    ```
+    chmod 600 ./tpp-test.pem
+    ```
 3. Access the (CentOS7) VM via a ssh session using the provided key (tpp-test.pem):
-
-    `ssh -i ./tpp-test.pem centos@<host-address>`
+    ```
+    ssh -i ./tpp-test.pem centos@<host-address>
+    ```
 4. Install the product per the documentation provided above.
 
 **NOTE:** This is for informational purposes only. VMs with pre-installed products are available for testing and should be used whenever feasible. Details provided in the Appendix section.
@@ -125,7 +128,9 @@ a. Manual installation by accessing the EC2 instance via ssh. Refer to the AWS d
 
 b. Install using the tpaexec utility (for EDB products only). Ensure the required test resources are already provisioned as outlined in the previous section.
 
-`tpaexec deploy <config-file>`
+```
+tpaexec deploy <config-file>
+```
 	
 See sample config-file for deploying BDR-Always-ON architecture using tpaexec.
 
