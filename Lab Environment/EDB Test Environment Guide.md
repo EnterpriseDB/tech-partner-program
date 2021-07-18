@@ -146,7 +146,7 @@ Details provided by partner.
 
 ## Testing Products
 
-Specific EDB products are tested with the partner product per the requirements provided by the partner. The baseline tests for the products are listed in the [test spreadsheet]. Testing of additional features may be needed depending on the partner requirements.
+Specific EDB products are tested with the partner product per the requirements provided by the partner. The baseline tests for the products are listed in the [test spreadsheet](https://drive.google.com/file/d/1bxix-SROlecXawjJXULGXLvSMGTb8hWC/view?usp=sharing). Testing of additional features may be needed depending on the partner requirements.
 
 ### Sample Test Deployments
 
