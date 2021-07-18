@@ -171,7 +171,7 @@ The following diagram shows the BDR-Always-ON architecture. For more details, re
 
 | EDB Product| Version | Host/Console Address | Operating System | Credentials |
 | -----------| --------| ------- | ----------- |----------- |
-| EDB Postgres Advanced | 13  | 172.16.209.175 | CentOS7 | Provided via key |
+| EDB Postgres Advanced | 13  | 172.16.209.175 | CentOS7 | Provided via [key](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/tpp-test.pem) to the client machine) |
 | EDB Postgres Advanced Cluster	 | 13  | 172.16.208.175 (master)<br>172.16.209.173</br>172.16.209.195 |  CentOS7 | Provided via [key](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/tpp-test.pem) to the client machine) |
 | EDB Failover Manager | 4.1  | 172.16.208.175 (master)<br>172.16.209.173</br>172.16.209.195 |  CentOS7 | Provided via [key](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/tpp-test.pem) to the client machine) |
 | EDB Postgres Enterprise Manager | 8  | https://172.16.208.125:8443/pem | CentOS7 | See [PEM test.doc] |
