@@ -176,3 +176,14 @@ The following diagram shows the BDR-Always-ON architecture. For more details, re
 | EDB Failover Manager | 4.1  | 172.16.208.175 (master)<br>172.16.209.173</br>172.16.209.195 |  CentOS7 | Provided via key |
 | EDB Postgres Enterprise Manager | 8  | https://172.16.208.125:8443/pem | CentOS7 | See [PEM test.doc] |
 | EDB Backup and Recovery Manager | 2.12  | 172.16.209.134 | CentOS7 | Provided via key |
+
+**NOTE:** The documentation requires EDB access credentials.
+
+### Example Partner Test Environments
+
+| Partner| Test Platform | Products Installed | Operating System |
+| -----------| --------| ------- | ----------- |
+| Nutanix | Nutanix  | EPAS<br>EFM</br>PEM</br>barman |  CentOS7 |
+| Thales | AWS  | EPAS<br>BDR (Always-ON architecture)</br>CipherTrust Manager (Partner Product) |  CentOS7 |
+| Liquibase | OpenStack  | EPAS<br>Liquibase Pro (Partner Product) |  CentOS7 |
+| Swarm64 | AWS (Partner)  | Pre-installed by Partner (validation only) | CentOS7 |
