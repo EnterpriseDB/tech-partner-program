@@ -63,9 +63,9 @@ Virtual machines (EC2 instances) are provisioned using the following methods:
 
 EC2 instances can be provisioned in order to deploy certain EDB products, such as BDR, using the `tpaexec` utility.
 
-1. Install and configure the AWS CLI on a client machine to access the AWS environment by following the AWS documentation.
+1. Install and configure the AWS CLI on a client machine to access the AWS environment by following the [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
 
-2. Install the `tpaexec` utility on the client machine using the TPAexec Installation Guide.
+2. Install the `tpaexec` utility on the client machine using the [TPAexec Installation Guide](https://documentation.2ndquadrant.com/tpa/snapshot/20.11.43-2/INSTALL/).
 
 3. Provision the test resources:
     ```
@@ -74,7 +74,7 @@ EC2 instances can be provisioned in order to deploy certain EDB products, such a
 	
 See sample config-file for provisioning resources for BDR-Always-ON architecture using tpaexec.
 
-For detailed information on how to use the tpaexec utility to provision resources on AWS, refer to the TPAexec documentation.
+For detailed information on how to use the tpaexec utility to provision resources on AWS, refer to the [TPAexec documentation](https://documentation.2ndquadrant.com/tpa/release/21.3-1/).
 
 **NOTE:** All TPAexec related documentation requires EDB access credentials.
 
