@@ -117,7 +117,7 @@ Follow these installation steps:
     ```
 4. Install the product per the documentation provided above.
 
-**NOTE:** This is for informational purposes only. VMs with pre-installed products are available for testing and should be used whenever feasible. Details provided in the [Appendix] section.
+**NOTE:** This is for informational purposes only. VMs with pre-installed products are available for testing and should be used whenever feasible. Details provided in the [Appendix](#appendix) section.
 
 
 ### On AWS
@@ -164,7 +164,9 @@ The following diagram shows the BDR-Always-ON architecture. For more details, re
  
 **NOTE:** The documentation requires EDB access credentials.
 
+</br></br>
 ## Appendix
+
 
 
 ### Pre-Deployed VMs On OpenStack
