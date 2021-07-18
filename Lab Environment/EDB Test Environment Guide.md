@@ -86,21 +86,21 @@ Test resources on a partner platform are deployed per specific instructions for 
 
 The following is the list of EDB products that may need to be installed for testing (list may grow). The products selected for testing vary according to the requirements of the partner.
 
-[EDB Postgres Advanced](https://www.enterprisedb.com/docs/epas/latest/epas_guide/)
+- [EDB Postgres Advanced](https://www.enterprisedb.com/docs/epas/latest/epas_guide/)
 
-EDB Postgres Enterprise Manager (PEM)
+- [EDB Postgres Enterprise Manager (PEM)](https://www.enterprisedb.com/docs/pem/latest/)
 
-EDB Failover Manager (EFM)
+- [EDB Failover Manager (EFM)](https://www.enterprisedb.com/docs/efm/latest/)
 
-EDB Backup Recovery Manager (barman)
+- [EDB Backup Recovery Manager (barman)](https://www.enterprisedb.com/docs/supported-open-source/barman/)
 
-EDB Bi-Directional Replication (BDR)
+- [EDB Bi-Directional Replication (BDR)](https://www.enterprisedb.com/docs/bdr/latest/)
 
 Additionally, the following non-EDB products may need to be installed for testing depending on the partner:
 
-Partner Product
+- Partner Product
 
-Community Postgres
+- [Community Postgres](https://www.postgresql.org/docs/)
 
 
 ### On OpenStack
@@ -119,14 +119,14 @@ Follow these installation steps:
     ```
 4. Install the product per the documentation provided above.
 
-**NOTE:** This is for informational purposes only. VMs with pre-installed products are available for testing and should be used whenever feasible. Details provided in the Appendix section.
+**NOTE:** This is for informational purposes only. VMs with pre-installed products are available for testing and should be used whenever feasible. Details provided in the [Appendix] section.
 
 
 ### On AWS
 
 There are a few different installation methods depending on the product:
 
-a. Manual installation by accessing the EC2 instance via ssh. Refer to the AWS documentation on how to access EC2 instances via ssh.
+a. Manual installation by accessing the EC2 instance via ssh. Refer to the [AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) on how to access EC2 instances via ssh.
 
 b. Install using the tpaexec utility (for EDB products only). Ensure the required test resources are already provisioned as outlined in the previous section.
 
@@ -136,11 +136,11 @@ tpaexec deploy <config-file>
 	
 See sample config-file for deploying BDR-Always-ON architecture using tpaexec.
 
-For detailed information on how to use the tpaexec utility to deploy products on AWS, refer to the TPAexec documentation.
+For detailed information on how to use the tpaexec utility to deploy products on AWS, refer to the [TPAexec documentation](https://documentation.2ndquadrant.com/tpa/release/21.3-1/).
 
 **NOTE:** All TPAexec related documentation requires EDB access credentials.
 
-c. Install using provided AMI by following the AWS documentation.
+c. Install using provided AMI by following the [AWS documentation](https://aws.amazon.com/premiumsupport/knowledge-center/launch-instance-custom-ami/).
 
 ### On Partner Platform
 
@@ -148,7 +148,7 @@ Details provided by partner.
 
 ## Testing Products
 
-Specific EDB products are tested with the partner product per the requirements provided by the partner. The baseline tests for the products are listed in the test spreadsheet. Testing of additional features may be needed depending on the partner requirements.
+Specific EDB products are tested with the partner product per the requirements provided by the partner. The baseline tests for the products are listed in the [test spreadsheet]. Testing of additional features may be needed depending on the partner requirements.
 
 ### Sample Test Deployments
 
@@ -156,10 +156,13 @@ Specific EDB products are tested with the partner product per the requirements p
 
 The following diagram shows EDB Postgres Advanced and associated tools deployed in a test environment:
 
+![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/EPAS%20and%20Tools.png)
 
 #### EDB Postgres Extended with BDR-Always-ON
  
-The following diagram shows the BDR-Always-ON architecture. For more details, refer to the BDR-Always-ON Architecture documentation.
+The following diagram shows the BDR-Always-ON architecture. For more details, refer to the [BDR-Always-ON Architecture documentation](https://documentation.2ndquadrant.com/tpa/release/21.1-1/architecture-BDR-Always-ON/).
+
+![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/BDR%20Always%20On.png)
  
 **NOTE:** The documentation requires EDB access credentials.
 
