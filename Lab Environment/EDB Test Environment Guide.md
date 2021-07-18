@@ -53,9 +53,11 @@ Virtual machines (EC2 instances) are provisioned using the following methods:
 
 #### Using AWS Console
 
-1. Login to the AWS console
+1. Login to the [AWS console](https://275761063523.signin.aws.amazon.com/console)
 
-2. Create EC2 instances by following the AWS documentation.
+![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/AWS%201.png)
+
+2. Create EC2 instances by following the [AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html).
 
 #### Using `tpaexec` Utility
 
