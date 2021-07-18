@@ -1,5 +1,3 @@
-# Introduction
-
 This document contains information on the test environments used to conduct testing for the EDB GlobalConnect Technology partners. The platforms where test resources are deployed typically fall under the following categories:
 
 - Private (EDB) Cloud Platform: OpenStack
