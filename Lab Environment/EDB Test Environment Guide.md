@@ -18,7 +18,7 @@ Virtual machines (and associated resources) are provisioned using the OpenStack 
 
 1. Login to the OpenStack console (Rocky)
 
-![](./images/OpenStack 1.png)
+![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/Openstack%201.png)
 
 2. On the dashboard click on Launch Instance button
 
