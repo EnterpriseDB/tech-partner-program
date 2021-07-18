@@ -164,3 +164,15 @@ The following diagram shows the BDR-Always-ON architecture. For more details, re
  
 **NOTE:** The documentation requires EDB access credentials.
 
+## Appendix
+
+
+### Pre-Deployed VMs On OpenStack
+
+| EDB Product| Version | Host/Console Address | Operating System | Credentials |
+| -----------| --------| ------- | ----------- |----------- |
+| EDB Postgres Advanced | 13  | 172.16.209.175 | CentOS7 | Provided via key |
+| EDB Postgres Advanced Cluster	 | 13  | 172.16.208.175 (master)<br>172.16.209.173</br>172.16.209.195 |  CentOS7 | Provided via key |
+| EDB Failover Manager | 4.1  | 172.16.208.175 (master)<br>172.16.209.173</br>172.16.209.195 |  CentOS7 | Provided via key |
+| EDB Postgres Enterprise Manager | 8  | https://172.16.208.125:8443/pem | CentOS7 | See [PEM test.doc] |
+| EDB Backup and Recovery Manager | 2.12  | 172.16.209.134 | CentOS7 | Provided via key |
