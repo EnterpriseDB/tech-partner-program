@@ -14,7 +14,7 @@ Virtual machines (and associated resources) are provisioned using the OpenStack 
 **NOTE:** This is for informational purposes only. VMs with pre-installed products are available for testing and should be used whenever feasible.
 
 
-1. Login to the OpenStack console (Rocky)
+1. Login to the [OpenStack console (Rocky)](https://os-controller.ox.uk.enterprisedb.com/auth/login/?next=/)
 
 ![](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/images/Openstack%201.png)
 
