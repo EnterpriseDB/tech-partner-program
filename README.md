@@ -4,4 +4,4 @@ ISV/IHV and distributor/reseller partners. Each partner in the GlobalConnect net
 leveraging EDB Postgres solutions. Browse our partners below to see how you can tap into the best resources in the Postgres industry.
 
 </br></br>
-[](tpp.png)
+<p align="center"><img src="tpp.png"/></p>
