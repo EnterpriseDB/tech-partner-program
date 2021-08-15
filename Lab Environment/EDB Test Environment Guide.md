@@ -86,6 +86,8 @@ The following is the list of EDB products that may need to be installed for test
 
 - [EDB Postgres Advanced](https://www.enterprisedb.com/docs/epas/latest/epas_guide/)
 
+- [EDB Postgres Extended](https://access.2ndquadrant.com/customer_portal/sw/2ndqpostgres/)
+
 - [EDB Postgres Enterprise Manager (PEM)](https://www.enterprisedb.com/docs/pem/latest/)
 
 - [EDB Failover Manager (EFM)](https://www.enterprisedb.com/docs/efm/latest/)
@@ -175,6 +177,7 @@ The following diagram shows the BDR-Always-ON architecture. For more details, re
 | -----------| --------| ------- | ----------- |----------- |
 | EDB Postgres Advanced | 13  | 172.16.209.175 | CentOS7 | Provided via [key](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/tpp-test.pem) to the client machine) |
 | EDB Postgres Advanced Cluster	 | 13  | 172.16.208.175 (master)<br>172.16.209.173</br>172.16.209.195 |  CentOS7 | Provided via [key](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/tpp-test.pem) to the client machine) |
+| EDB Postgres Extended | 13  | 172.16.209.127 | CentOS7 | Provided via [key](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/tpp-test.pem) to the client machine) |
 | EDB Failover Manager | 4.1  | 172.16.208.175 (master)<br>172.16.209.173</br>172.16.209.195 |  CentOS7 | Provided via [key](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/tpp-test.pem) to the client machine) |
 | EDB Postgres Enterprise Manager | 8  | https://172.16.208.125:8443/pem | CentOS7 | See [PEM Testing Document](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/Testing%20with%20PEM.md) |
 | EDB Backup and Recovery Manager | 2.12  | 172.16.209.134 | CentOS7 | Provided via [key](https://github.com/EnterpriseDB/tech-partner-program/blob/main/Lab%20Environment/tpp-test.pem) to the client machine) |
