@@ -1,0 +1,116 @@
+---
+navTitle: BDR
+navigation:
+  - index
+  - overview
+  - appusage
+  - configuration
+  - nodes
+  - ddl
+  - security
+  - conflicts
+  - sequences
+  - column-level-conflicts
+  - crdt
+  - durability
+  - eager
+  - camo
+  - scaling
+  - tssnapshots
+  - repsets
+  - striggers
+  - backup
+  - upgrades
+  - twophase
+  - catalogs
+  - monitoring
+  - functions
+  - credits
+  - release-notes
+  - isolation_details
+  - known-issues
+  - libraries
+  - camo_clients
+title: BDR (Bi-Directional Replication)
+directoryDefaults:
+  description: >-
+    BDR (Bi-Directional Replication) is a ground-breaking multi-master
+    replication capability for PostgreSQL clusters that has been in full
+    production status since 2014.
+originalFilePath: index.md
+
+---
+
+BDR (short for Bi-Directional Replication) is a PostgreSQL extension which
+provides a solution for building multi-master clusters with mesh topology.
+This means that you can write to any server and the changes will be
+sent row-by-row to all the other servers that are part of the same BDR group.
+
+BDR version 3 ("BDR3") is built on the [pglogical3](https://www.2ndquadrant.com/resources/pglogical/)
+extension. However, everything you need to
+know about BDR3 is included here and it is unnecessary, as well as potentially
+confusing, to refer to pglogical docs.
+
+This documentation refers only to BDR3, not to earlier architectures, referred
+to as BDR1 and BDR2. There are significant and important differences in BDR3
+and you should not refer to earlier docs or rely on anything stated within
+them.
+
+BDR3 comes in two variants, the Standard Edition (BDR-SE) and the Enterprise
+Edition (BDR-EE), these variants are compatible with specific versions of
+database server, as shown below.
+
+**BDR version support compatibility matrix:**
+
+| BDR | Variant    | Server                | Supported Versions |
+| --- | ---------- | --------------------- | ------------------ |
+| 3.6 | Standard   | PostgreSQL            | 10, 11             |
+| 3.7 | Standard   | PostgreSQL            | 11, 12, 13         |
+| 3.7 | Standard   | EDB Postgres Advanced | 11, 12, 13         |
+| 3.6 | Enterprise | EDB Postgres Extended | 11                 |
+| 3.7 | Enterprise | EDB Postgres Extended | 11, 12, 13         |
+| 3.7 | Enterprise | EDB Postgres Advanced | 11, 12, 13         |
+
+EDB Postgres Extended was formerly known as 2ndQ Postgres.
+
+The Enterprise Edition provides these extensive additional features to provide
+very high availability, avoid data conflicts and to cope with more advanced
+usage scenarios.
+
+-   Conflict-free Replicated Data Types - additional data types which provide
+    mathematically proven consistency in asynchronous multi-master update
+    scenarios
+-   Column Level Conflict Resolution - ability to use per column last-update
+    wins resolution so that UPDATEs on different fields can be "merged" without
+    losing either of them
+-   Transform Triggers - triggers that are executed on the incoming stream of
+    data providing ability to modify it or to do advanced programmatic filtering
+-   Conflict triggers - triggers which are called when conflict is detected,
+    providing a way to use custom conflict resolution techniques
+-   Additional DDL support (CREATE TABLE AS)
+-   Advanced DDL Handling for NOT VALID constraints and ALTER TABLE
+-   Additional synchronization for Logical/Physical Standby servers for faster
+    build of failoverable standbys
+-   Parallel Apply - allow multiple writers to apply the incoming changes
+-   Eager Replication - synchronizes between the nodes of the cluster before
+    committing a transaction to provide conflict free replication (currently
+    only with EDB Postgres Extended)
+-   Commit At Most Once - a consistency feature helping
+    an application to commit each transaction only once, even in the
+    presence of node failures (currently only with EDB Postgres Extended)
+-   Timestamp-based Snapshots - providing consistent reads across multiple
+    nodes for retrieving data as they appeared or will appear at a given time
+    (currently only with EDB Postgres Extended)
+-   Estimates for Replication Catch-up times
+    (currently only with EDB Postgres Extended)
+-   Selective Backup of a Single Database  (currently only with EDB Postgres
+    Extended)
+-   Hold back freezing to assist resolution of UPDATE/DELETE conflicts
+    (currently only with EDB Postgres Extended)
+-   Decoding Worker (currently only with EDB Postgres Extended version 13 and
+    above)
+
+Features that are currently available only with EDB Postgres Extended are
+expected to be available with EDB Postgres Advanced 14.
+
+This documentation is for the Enterprise Edition of BDR3.

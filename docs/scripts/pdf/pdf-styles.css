@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "SignikaRegular";
+  src: url("Signika-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  /*
+    To get multiple Signika fonts to work with wkhtmltopdf, I needed to edit the font
+    using FontForge. You need to change the "Preferred Family" attribute to be unique,
+    otherwise wkhtmltopdf will only use one of the fonts. See https://stackoverflow.com/a/45524377
+  */
+
+  font-family: "SignikaLight";
+  src: url("Signika-Light-modified.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("SourceCodePro-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+body {
+  font-size: 28px;
+  font-weight: 300;
+  font-family: SignikaLight;
+}
+
+body::before {
+  content: " "; /* this is needed to fix some font rendering quirk */
+  font-family: SignikaLight;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+  font-family: SignikaRegular;
+  font-weight: normal;
+}
+
+h2 {
+  margin: 4rem 0;
+}
+
+h3 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+h4,
+h5,
+h6 {
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+}
+
+p,
+ul {
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  margin-top: 7rem;
+  border-top: 1px solid #ebeff2;
+}
+
+blockquote {
+  border-left: 5px solid #ebeff2;
+  padding-left: 1rem;
+  margin-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Code */
+pre,
+code {
+  font-family: Source Code Pro;
+  font-weight: normal;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+}
+
+code {
+  color: #457a00;
+  background-color: #f0f4f7;
+  white-space: pre-wrap !important; /* SourceCode pandoc will override otherwise */
+}
+
+pre {
+  background-color: #f8f8f8; /* match SourceCode pandoc highlighting colors */
+  margin-bottom: 2rem;
+}
+
+pre code {
+  color: black;
+  background-color: #f8f8f8; /* match SourceCode pandoc highlighting colors */
+}
+
+/* Tables */
+table {
+  margin: 3rem 0;
+  text-align: left;
+  border-collapse: collapse;
+  width: 100% !important;
+  /*word-break: break-word;*/
+}
+
+thead {
+  font-weight: bold;
+}
+
+tbody tr {
+  border-top: 1px solid #ebeff2;
+}
+
+th,
+td {
+  padding: 0.3rem 0;
+  padding-right: 1.5rem;
+}

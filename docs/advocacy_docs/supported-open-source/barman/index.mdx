@@ -1,0 +1,34 @@
+---
+title: Barman
+navTitle: Barman
+description: EDB supports Barman.
+tags:
+    - barman
+    - backup
+    - recovery
+    - replication
+    - rsync
+    - postgresql
+directoryDefaults:
+  iconName: coffee
+  product: barman
+---
+
+Barman (Backup and Recovery Manager) is an open-source administration tool for remote backups and disaster recovery of PostgreSQL servers in business-critical environments. It relies on PostgreSQL’s robust and reliable Point In Time Recovery technology, allowing DBAs to remotely manage a complete catalogue of backups and the recovery phase of multiple remote servers – all from one location. Barman is distributed under GNU GPL 3 and maintained by EDB.
+
+!!! Note
+    Looking for Barman documentation? Head over to [http://docs.pgbarman.org/](http://docs.pgbarman.org/)
+
+
+Key capabilities include:
+
+- Remote backup and restore with rsync and the PostgreSQL protocol
+- Support for file level incremental backups with rsync
+- Retention policy support
+- WAL Archive Compression with gzip, bzip2, or pigz
+- Backup data verification
+- Backup with RPO=0 using a synchronous physical streaming replication connection
+- Rate limiting
+- Tested with custom WAL sizes
+
+For more about Barman’s features and goals, see https://www.pgbarman.org/about/

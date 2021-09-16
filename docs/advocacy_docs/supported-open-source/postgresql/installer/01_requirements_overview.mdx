@@ -1,0 +1,59 @@
+---
+title: "Requirements Overview"
+legacyRedirects:
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide/13.0/requirements_overview.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/11/PostgreSQL_Installation_Guide.1.05.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/11/PostgreSQL_Installation_Guide.1.04.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/11/PostgreSQL_Installation_Guide.1.06.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/12/requirements_overview.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/9.5/PostgreSQL_Installation_Guide.1.06.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/9.5/PostgreSQL_Installation_Guide.1.05.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/9.5/PostgreSQL_Installation_Guide.1.04.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/9.6/PostgreSQL_Installation_Guide.1.06.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/9.6/PostgreSQL_Installation_Guide.1.05.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/9.6/PostgreSQL_Installation_Guide.1.04.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/10/PostgreSQL_Installation_Guide.1.06.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/10/PostgreSQL_Installation_Guide.1.05.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/10/PostgreSQL_Installation_Guide.1.07.html"
+  - "/edb-docs/d/postgresql/installation-getting-started/installation-guide-installers/10/PostgreSQL_Installation_Guide.1.04.html"
+---
+
+
+
+## Supported Platforms
+
+For information about the platforms and versions supported by PostgreSQL, visit the [EDB website](https://www.enterprisedb.com/services-support/edb-supported-products-and-platforms/)
+
+To download PostgreSQL installers for Windows, Mac, and the Linux versions listed above, visit the [EDB website](https://www.enterprisedb.com/downloads/postgresql)
+
+PostgreSQL is also available for other Linux-based hosts. For more information, visit [PostgreSQL website](https://www.postgresql.org/download/).
+
+## Hardware Requirements
+
+The following installation requirements assume you have selected the default options during the installation process. The minimum hardware required to install and run PostgreSQL are:
+
+-   1 GHz processor
+-   2 GB of RAM
+-   512 MB of HDD
+
+Additional disk space is required for data or supporting components.
+
+
+
+## Software Prerequisites
+
+**User Privileges**
+
+On a Mac system, you must have superuser privileges to perform a PostgreSQL installation. To perform an installation on a Windows system, you must have administrator privileges.
+
+If you are installing PostgreSQL on a Windows system that is configured with User Account Control (UAC) enabled, you can assume sufficient privileges to invoke the graphical installer by clicking on the right side of the installer name and selecting `Run as administrator` from the context menu. If prompted, enter an administrator password to continue.
+
+**Windows-specific Software Requirements**
+
+Apply the Windows operating system updates before invoking the PostgreSQL installer. If the installer encounters errors during the installation process, exit the installation and ensure that your Windows version is up-to-date before restarting the installer.
+
+**Mac OS X-specific Software Requirements**
+
+PostgreSQL installation on Mac OS X differs slightly from other platforms as the distribution is in a different format, and some additional configuration may be required.
+
+The Mac OS X installer is an App Bundle (a set of files and directories in a prescribed format). The installer is available as a disk image (`.dmg`) file from the website or as an archive (`.zip`) from Stack Builder. To extract the installer, simply mount the disk image and copy the installer to the desired location, or run it directly from the disk image.
