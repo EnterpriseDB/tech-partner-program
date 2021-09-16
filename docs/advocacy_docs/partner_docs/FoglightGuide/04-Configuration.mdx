@@ -1,0 +1,70 @@
+---
+title: 'Configuration'
+description: 'Walkthrough of setting up Foglight for PostgreSQL'
+---
+
+## Prerequisites
+
+  - A running EDB Postgres Advanced (EPAS) / EDB Postgres Extended instance
+  - Foglight for PostgreSQL
+  
+
+**The following steps show how to configure Foglight for PostgreSQL for connecting to EDB Postgres Extended and EDB Postgres Advanced servers:**
+
+
+
+1.	Log on to the Foglight console
+<p align="center">
+  <img  src="Images/FoglightConsole.png">
+</p>
+
+2.	Navigate to Databases screen by clicking on Databases on the main menu:
+<p align="center">
+  <img  src="Images/LaunchDatabasesMenu.png">
+</p>
+
+3.	Select PostgreSQL as the database server and click on Monitor ( + icon) to launch the Agent Installer Wizard:
+<p align="center">
+  <img  src="Images/LaunchAgentInstallerWizard.png">
+</p>
+
+4.	Enter the desired agent name and click Next:
+
+#### EDB Postgres Extended example:
+<p align="center">
+  <img  src="Images/AgentInstallerWizard1-pge.png">
+</p>
+
+#### EDB Postgres Advanced example:
+<p align="center">
+  <img  src="Images/AgentInstallerWizard1-epas.png">
+</p>
+
+5.	Enter the Agent properties and click Next:
+
+#### EDB Postgres Extended example:
+<p align="center">
+  <img  src="Images/AgentInstallerWizard2-pge.png">
+</p>
+
+#### EDB Postgres Advanced example:
+<p align="center">
+  <img  src="Images/AgentInstallerWizard2-epas.png">
+</p>
+
+6.	Verify Agent summary and click Finish to create and activate agent:
+
+#### EDB Postgres Extended example:
+<p align="center">
+  <img  src="Images/AgentInstallerWizard3-pge.png">
+</p>
+
+#### EDB Postgres Advanced example:
+<p align="center">
+  <img  src="Images/AgentInstallerWizard3-epas.png">
+</p>
+
+7.	The agents are displayed once they are successfully created and activated:
+<p align="center">
+  <img  src="Images/AgentsCreated.png">
+</p>

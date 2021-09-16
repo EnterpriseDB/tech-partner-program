@@ -238,6 +238,9 @@ const Page = () => (
             <IndexCardLink to="/partner_docs/LiquibaseGuide">
               Liquibase Pro
             </IndexCardLink>
+            <IndexCardLink to="/partner_docs/FoglightGuide">
+              Quest Foglight
+            </IndexCardLink>
             <IndexCardLink to="/partner_docs/NutanixGuide">
               Nutanix AHV
             </IndexCardLink>
